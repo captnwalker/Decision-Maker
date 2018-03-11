@@ -4,6 +4,12 @@
 
 ### Screenshoots of this project
 
+### Tech Stack
+
+* REACT
+* Bulma Framework
+* JavaScript
+
 #### License
 
 * MIT

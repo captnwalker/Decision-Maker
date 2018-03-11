@@ -8,13 +8,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var IndecisionApp = function (_React$Component) {
-    _inherits(IndecisionApp, _React$Component);
+var DecisionApp = function (_React$Component) {
+    _inherits(DecisionApp, _React$Component);
 
-    function IndecisionApp(props) {
-        _classCallCheck(this, IndecisionApp);
+    function DecisionApp(props) {
+        _classCallCheck(this, DecisionApp);
 
-        var _this = _possibleConstructorReturn(this, (IndecisionApp.__proto__ || Object.getPrototypeOf(IndecisionApp)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (DecisionApp.__proto__ || Object.getPrototypeOf(DecisionApp)).call(this, props));
 
         _this.handleDeleteOptions = _this.handleDeleteOptions.bind(_this);
         _this.handlePick = _this.handlePick.bind(_this);
@@ -25,7 +25,7 @@ var IndecisionApp = function (_React$Component) {
         return _this;
     }
 
-    _createClass(IndecisionApp, [{
+    _createClass(DecisionApp, [{
         key: 'handleDeleteOptions',
         value: function handleDeleteOptions() {
             this.setState(function () {
@@ -59,8 +59,8 @@ var IndecisionApp = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
-            var title = 'Indecision';
-            var subtitle = 'Put your life in the hands of a computer';
+            var title = 'Decision Maker';
+            var subtitle = 'Can\'t decide?? Let your computer do it!';
 
             return React.createElement(
                 'div',
@@ -81,7 +81,7 @@ var IndecisionApp = function (_React$Component) {
         }
     }]);
 
-    return IndecisionApp;
+    return DecisionApp;
 }(React.Component);
 
 var Header = function Header(props) {
@@ -102,7 +102,7 @@ var Header = function Header(props) {
 };
 
 Header.deafaultProps = {
-    title: 'Indecision'
+    title: 'Decision'
 };
 
 var Action = function Action(props) {
@@ -198,4 +198,4 @@ var AddOption = function (_React$Component2) {
     return AddOption;
 }(React.Component);
 
-ReactDOM.render(React.createElement(IndecisionApp, null), document.getElementById('app'));
+ReactDOM.render(React.createElement(DecisionApp, null), document.getElementById('app'));

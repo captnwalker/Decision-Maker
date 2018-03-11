@@ -1,4 +1,4 @@
-class IndecisionApp extends React.Component {
+class DecisionApp extends React.Component {
     constructor(props) {
     super(props);
         this.handleDeleteOptions = this.handleDeleteOptions.bind(this);
@@ -38,8 +38,8 @@ handleAddOption(option) {
 }
 
     render() {
-        const title = 'Indecision';
-        const subtitle = 'Put your life in the hands of a computer';
+        const title = 'Decision Maker';
+        const subtitle = 'Can\'t decide?? Let your computer do it!';
         
         return(
             <div>
@@ -70,7 +70,7 @@ const Header = (props) => {
 };
 
 Header.deafaultProps = {
-    title: 'Indecision'
+    title: 'Decision Maker'
 };
 
 const Action = (props)=> {
@@ -136,4 +136,4 @@ class AddOption extends React.Component {
     }
 }
 
-ReactDOM.render(<IndecisionApp />, document.getElementById('app'));
+ReactDOM.render(<DecisionApp />, document.getElementById('app'));

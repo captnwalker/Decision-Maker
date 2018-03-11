@@ -1,9 +1,6 @@
-console.log('App.js is running');
-
-
 const app = {
-    title: 'Indecision App',
-    subtitle: 'Put your life in the hands of the computer',
+    title: 'Decision Maker',
+    subtitle: 'Can\'t decide?? Let your computer do it!',
     options: []
 };
 
