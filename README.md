@@ -6,9 +6,15 @@
 
 ### Tech Stack
 
-* REACT
-* Bulma Framework
+* REACT v16
+* react-dom
+* Bulma Framework ???
 * JavaScript
+* Validator
+* Bable-CLI
+* Webpack 3.1
+* babel-core
+* babel-loader
 
 #### License
 
