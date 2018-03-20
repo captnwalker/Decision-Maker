@@ -9,6 +9,29 @@ class DecisionApp extends React.Component {
       options: props.options
     };
   }
+
+  componentDidMount() {
+    try {
+      const json = localStorage.getItem('options');
+      const options = JSON.parse(json);
+
+      if (options) {
+        this.setState(() => ({ options }));
+      }
+    } catch (e) {
+      // Do nothing at all
+    }
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.options.length !== this.state.options.length) {
+      const json = JSON.stringify(this.state.options);
+      localStorage.setItem('options', json);
+    }
+  }
+  componentWillUnmount() {
+    console.log('componentWillUnmount');
+  }
+
   handleDeleteOptions() {
     this.setState(() => ({ options: [] }));
   }
@@ -24,9 +47,9 @@ class DecisionApp extends React.Component {
   }
   handleAddOption(option) {
     if (!option) {
-      return 'Enter valid value to add item';
+      return 'Enter valid item';
     } else if (this.state.options.indexOf(option) > -1) {
-      return 'This option already exists';
+      return 'This choice already exists';
     }
 
     this.setState((prevState) => ({
@@ -70,7 +93,7 @@ const Header = (props) => {
 };
 
 Header.defaultProps = {
-  title: 'Decision'
+  title: 'Decision Maker'
 };
 
 const Action = (props) => {
@@ -80,7 +103,7 @@ const Action = (props) => {
         onClick={props.handlePick}
         disabled={!props.hasOptions}
       >
-        What should I do?
+        What Should I do?
       </button>
     </div>
   );

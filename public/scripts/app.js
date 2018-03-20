@@ -27,6 +27,35 @@ var DecisionApp = function (_React$Component) {
   }
 
   _createClass(DecisionApp, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      try {
+        var json = localStorage.getItem('options');
+        var options = JSON.parse(json);
+
+        if (options) {
+          this.setState(function () {
+            return { options: options };
+          });
+        }
+      } catch (e) {
+        // Do nothing at all
+      }
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps, prevState) {
+      if (prevState.options.length !== this.state.options.length) {
+        var json = JSON.stringify(this.state.options);
+        localStorage.setItem('options', json);
+      }
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      console.log('componentWillUnmount');
+    }
+  }, {
     key: 'handleDeleteOptions',
     value: function handleDeleteOptions() {
       this.setState(function () {
@@ -55,9 +84,9 @@ var DecisionApp = function (_React$Component) {
     key: 'handleAddOption',
     value: function handleAddOption(option) {
       if (!option) {
-        return 'Enter valid value to add item';
+        return 'Enter valid item';
       } else if (this.state.options.indexOf(option) > -1) {
-        return 'This option already exists';
+        return 'This choice already exists';
       }
 
       this.setState(function (prevState) {
@@ -116,7 +145,7 @@ var Header = function Header(props) {
 };
 
 Header.defaultProps = {
-  title: 'Decision'
+  title: 'Decision Maker'
 };
 
 var Action = function Action(props) {
@@ -129,7 +158,7 @@ var Action = function Action(props) {
         onClick: props.handlePick,
         disabled: !props.hasOptions
       },
-      'What should I do?'
+      'What Should I do?'
     )
   );
 };
