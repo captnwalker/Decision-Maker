@@ -38,6 +38,7 @@
 * Webpack 3.1
 * babel-core
 * babel-loader
+* babel-plugin-transform-class-properties
 
 ### Steps to Deploy Locally
 
