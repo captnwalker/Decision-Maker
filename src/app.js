@@ -6,7 +6,7 @@ class DecisionApp extends React.Component {
     this.handleAddOption = this.handleAddOption.bind(this);
     this.handleDeleteOption = this.handleDeleteOption.bind(this);
     this.state = {
-      options: props.options
+      options: []
     };
   }
 
@@ -78,10 +78,6 @@ class DecisionApp extends React.Component {
     );
   }
 }
-
-DecisionApp.defaultProps = {
-  options: []
-};
 
 const Header = (props) => {
   return (
