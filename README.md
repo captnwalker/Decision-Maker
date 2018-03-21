@@ -44,6 +44,7 @@
 * css-loader
 * sass-loader
 * node-sass
+* normalizecss npm
 
 ### Steps to Deploy Locally
 

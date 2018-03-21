@@ -71,6 +71,7 @@ export default class DecisionApp extends React.Component {
         return (
             <div>
                 <Header subtitle={subtitle} />
+                <div className="container">
                 <Action
                     hasOptions={this.state.options.length > 0}
                     handlePick={this.handlePick}
@@ -87,6 +88,7 @@ export default class DecisionApp extends React.Component {
                 selectedOption={this.state.selectedOption}
                 handleClearSelectedOption={this.handleClearSelectedOption}
                 />
+                </div>
             </div>
         );
     }
