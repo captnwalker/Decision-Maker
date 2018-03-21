@@ -1,0 +1,26 @@
+// Widget header
+.widget {
+    background: $brand-6;
+    margin-bottom: $xl-size;
+}
+
+.widget__message {
+    border-bottom: 1px solid lighten($brand-5, 10%);
+    color: $brand-2;
+    margin: 0;
+    padding: $l-size;
+    text-align: center;
+
+}
+
+.widget-header {
+    background: $brand-5;
+    color: $brand-2;
+    display: flex;
+    justify-content: space-between;
+    padding: $m-size;
+}
+
+.widget-header__title {
+    margin: 0;
+}
