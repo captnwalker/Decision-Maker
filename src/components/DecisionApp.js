@@ -21,7 +21,9 @@ export default class DecisionApp extends React.Component {
         }));
     };
     handleClearSelectedOption = () => {
-        this.setState(() => ({ selectedOption: undefined }));
+        this.setState(() => ({ 
+            selectedOption: undefined,
+         }));
     }
     handlePick = () => {
         const randomNum = Math.floor(Math.random() * this.state.options.length);
