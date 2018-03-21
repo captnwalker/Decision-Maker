@@ -39,6 +39,7 @@
 * babel-core
 * babel-loader
 * babel-plugin-transform-class-properties
+* react-modal
 
 ### Steps to Deploy Locally
 
