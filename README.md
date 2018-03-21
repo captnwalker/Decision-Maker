@@ -40,6 +40,10 @@
 * babel-loader
 * babel-plugin-transform-class-properties
 * react-modal
+* style-loader
+* css-loader
+* sass-loader
+* node-sass
 
 ### Steps to Deploy Locally
 
