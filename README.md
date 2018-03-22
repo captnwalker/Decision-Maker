@@ -10,7 +10,7 @@
 
 ### Deployment
 
->The **[Dilemma Decider](https://expense-XXXXager3.herokuapp.com/ "Dilemma Decider")** has been deployed to a Heroku Dyno and can be used by following the link. (Note: *Resting Dyno's can often take 10 to 15 seconds to spin up on initial load and are not indicative of a sites true load speed.*)
+>The **[Dilemma Decider](https://dilemma-decider.herokuapp.com/ "Dilemma Decider")** has been deployed to a Heroku Dyno and can be used by following the link. (Note: *Resting Dyno's can often take 10 to 15 seconds to spin up on initial load and are not indicative of a sites true load speed.*)
 
 ### Screenshot of this project
 
@@ -20,7 +20,7 @@
 
 | Core | Styling | Dependencies | Dev Environment
 | :---: | :---: | :---: | :---: |
-| React v16| SCSS |  Yarn | WebPack
+| React v16| SCSS |  Yarn | WebPack 3.1
 | react-dom | Google Fonts |normalize.css npm | babel-core
 | NodeJS | react-modal | CSS Loader | babel-loader
 | JSX | CSS3 | RegEx  | Bable-CLI
@@ -38,4 +38,4 @@
 4. Start local server by running `yarn run dev-server`
 5. You are now in development mode on localhost:8080
 
-#### License - MIT
+#### License - *MIT*
