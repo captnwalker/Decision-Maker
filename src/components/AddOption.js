@@ -10,8 +10,7 @@ export default class AddOption extends React.Component {
         this.handleAddOption = this.handleAddOption.bind(this);
     }
     handleAddOption(e) {
-        e.preventDefault();
-        console.log('testing');
+        e.preventDefault();        
         const option = e.target.elements.option.value.trim();
         const error = this.props.handleAddOption(option);
 
@@ -26,8 +25,8 @@ export default class AddOption extends React.Component {
             <div>
                 {this.state.error && <p className="add-option-error">{this.state.error}</p>}
                 <form className="add-option" onSubmit={this.handleAddOption}>
-                    <input className="add-option__input"type="text" name="option" />
-                    <button className="button">Add Option</button>
+                    <input className="add-option__input" type="text" name="option" placeholder="Type your choices here" />
+                    <button className="button">Add Choice</button>
                 </form>
             </div>
         );

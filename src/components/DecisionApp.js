@@ -3,6 +3,7 @@ import AddOption from './AddOption';
 import Action from './Action';
 import Header from './Header';
 import Options from './Options';
+import InfoModal from './InfoModal';
 import OptionModal from './OptionModal';
 
 
@@ -12,19 +13,27 @@ export default class DecisionApp extends React.Component {
         selectedOption: undefined
     };
 
+    // handleCloseInfoModal() {
+    //     this.setState({ showModal: false });
+    // }
+
+
     handleDeleteOptions = () => {
         this.setState(() => ({ options: [] }));
     };
+
     handleDeleteOption = (optionToRemove) => {
         this.setState((prevState) => ({
             options: prevState.options.filter((option) => optionToRemove !== option)
         }));
     };
+
     handleClearSelectedOption = () => {
         this.setState(() => ({ 
             selectedOption: undefined,
          }));
-    }
+    };
+
     handlePick = () => {
         const randomNum = Math.floor(Math.random() * this.state.options.length);
         const option = this.state.options[randomNum];
@@ -32,6 +41,7 @@ export default class DecisionApp extends React.Component {
             selectedOption: option
         }));
     };
+
     handleAddOption = (option) => {
         if (!option) {
             return 'Enter valid item';
@@ -73,6 +83,8 @@ export default class DecisionApp extends React.Component {
             <div>
                 <Header subtitle={subtitle} />
                 <div className="container">
+                    <InfoModal                        
+                    />
                     <Action
                         hasOptions={this.state.options.length > 0}
                         handlePick={this.handlePick}
@@ -87,12 +99,13 @@ export default class DecisionApp extends React.Component {
                         handleAddOption={this.handleAddOption}
                     />
                     </div>
-                    </div>
+                </div>
                     <OptionModal 
                         selectedOption={this.state.selectedOption}
                         handleClearSelectedOption={this.handleClearSelectedOption}
                     />
-                </div>
-            );
-        }
+                    
+            </div>
+        );
     }
+}

@@ -6,19 +6,25 @@
 }
 
 .header__title {
-    font-size: $l-size;
+    font-size: $xl-size;
     margin: 0;
 }
 
 .header__subtitle {
     color: $brand-2;
-    font-size: $m-size;
-    font-weight: 500;
+    font-size: $l-size;
+    font-weight: 800;
     margin: 0;
 }
 
-@media (min-width: $desktop-breakpoint) {
+@media (max-width: $desktop-breakpoint) {
     .header {
-        margin-bottom: $xl-size;
+        margin-bottom: $m-size;        
+    }
+    .header__title {
+        font-size: $l-size;
+}
+    .header__subtitle {
+        font-size: $m-size;
     }
 }

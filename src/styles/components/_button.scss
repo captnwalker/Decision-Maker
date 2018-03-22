@@ -26,6 +26,19 @@
     padding: $s-size;
 }
 
+.info-btn {
+     background: $brand-4;
+     border: none;
+     border-bottom: .3rem solid darken($brand-4, 10%);
+     border-radius: 15px;
+     color: $text-1;
+     font-size: $s-size;
+     font-style: italic;
+     font-weight: 300;
+     margin-bottom: $s-size;
+     padding: $xs-size;
+}
+
 .button--link {
     background: none;
     border: none;
@@ -33,8 +46,14 @@
     padding: 0;
 }
 
-@media (min-width: $desktop-breakpoint) {
+@media (max-width: $desktop-breakpoint) {
     .big-button {
-        margin-bottom: $xl-size;
+        margin-bottom: $m-size;
+    }
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .big-button {
+        font-size: $m-size;
     }
 }
