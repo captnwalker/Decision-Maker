@@ -1,6 +1,6 @@
 # Dilemma Decider
 
-## An entertaining decision making app built in REACT
+## An Entertaining Decision Making App Built in REACT
 
 ### Table of Contents
 
