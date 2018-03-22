@@ -19,7 +19,7 @@
 
 .option-modal {
     background: $brand-6;
-    border-radius: 15px;
+    border-radius: 85px;
     color: $text-1;
     max-width: 30rem;
     outline: none;
@@ -40,18 +40,10 @@
     word-break: break-all;
 }
 
-
-// .ReactModal__Content .ReactModal__Content--after-open {
-//     align-items: center !important;
-//     display: flex !important;
-//     justify-content: center !important;
-// }
-
-
 .info-modal {
-      background: $brand-6;
-      border-radius: 15px;
-      color: $text-1;
+      background: $brand-2;
+      border-radius: 85px;
+      color: rgb(251, 249, 252);
       max-width: 30rem;
       outline: none;
       padding: $l-size;
@@ -65,5 +57,7 @@
 
 .p-info {
     //color: $text-2;
+    font-family: $font-4;
     font-size: $m-size;
+    font-weight: 400;
 }

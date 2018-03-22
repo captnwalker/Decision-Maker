@@ -5,7 +5,7 @@ class InfoModal extends React.Component {
     constructor() {
         super();
         this.state = {
-            showModal: true            
+            showModal: true
         };
 
         this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -38,14 +38,14 @@ class InfoModal extends React.Component {
                         How does The Delimma Decider's AI algorithm work?
                         </h2>
 
-                        <p className="p-info"> First, The Delimma Decider puts your choices through a Natural Language Processing unit in order to abstract your thoughts into a machine readable format. Second, this machine readable data is used to query various databases like Wikipedia, Google Scholar, and IBM's Watson. Finally, the results are graphed in Euclidean space and a solution is choosen using integral calculus with transcendentals.</p>
+                        <p className="p-info"> First, The Delimma Decider puts your choices through a Natural Language Processor in order to abstract your thought processes into a machine readable format. Second, this machine readable data is used to query various databases like Wikipedia, Google Scholar, and IBM's Watson. Finally, the results are graphed in Euclidean space and a solution is choosen using integral calculus with transcendentals.</p>
 
                         <h2 className="info-modal__title">Really?</h2>
 
                         <p className="p-info">Nah, it just picks a choice at random.</p>
 
                     <button className="info-btn" onClick={this.handleCloseModal}>
-                    Close
+                    Close when your ready to decide...
                     </button>
                     </div>
                 </Modal>

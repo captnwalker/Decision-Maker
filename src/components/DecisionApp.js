@@ -44,7 +44,7 @@ export default class DecisionApp extends React.Component {
 
     handleAddOption = (option) => {
         if (!option) {
-            return 'Enter valid item';
+            return 'Please enter a valid choice';
         } else if (this.state.options.indexOf(option) > -1) {
             return 'This choice already exists';
         };

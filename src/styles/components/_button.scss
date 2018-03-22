@@ -32,7 +32,8 @@
      border-bottom: .3rem solid darken($brand-4, 10%);
      border-radius: 15px;
      color: $text-1;
-     font-size: $s-size;
+     font-family: $font-3;
+     font-size: $m-size;
      font-style: italic;
      font-weight: 300;
      margin-bottom: $s-size;
@@ -54,6 +55,6 @@
 
 @media (max-width: $desktop-breakpoint) {
     .big-button {
-        font-size: $m-size;
+        font-size: $l-size;
     }
 }

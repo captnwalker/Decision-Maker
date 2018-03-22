@@ -3,6 +3,15 @@
 ## An Entertaining Decision Making App Built in REACT
 
 ### Table of Contents
+- [Dilemma Decider](#dilemma-decider)
+    - [An Entertaining Decision Making App Built in REACT](#an-entertaining-decision-making-app-built-in-react)
+        - [Table of Contents](#table-of-contents)
+        - [How to Use](#how-to-use)
+        - [Deployment](#deployment)
+        - [Screenshot of this project](#screenshot-of-this-project)
+        - [Tech Stack](#tech-stack)
+        - [Steps to Deploy Locally](#steps-to-deploy-locally)
+            - [License - *MIT*](#license---mit)
 
 ### How to Use
 
@@ -14,21 +23,21 @@
 
 ### Screenshot of this project
 
-![Dilemma Decider](https://raw.github.com/captnwalker/expXXXXXager/master/screenshots/screenshot2.gif "Dilemma Decider")
+![Dilemma Decider](https://raw.github.com/captnwalker/dilemma-decider/master/screenshots/screenshot1.gif "Dilemma Decider")
+
+![Dilemma Decider](https://raw.github.com/captnwalker/dilemma-decider/master/screenshots/screenshot2.jpg "Dilemma Decider")
 
 ### Tech Stack
 
 | Core | Styling | Dependencies | Dev Environment
 | :---: | :---: | :---: | :---: |
-| React v16| SCSS |  Yarn | WebPack 3.1
-| react-dom | Google Fonts |normalize.css npm | babel-core
-| NodeJS | react-modal | CSS Loader | babel-loader
-| JSX | CSS3 | RegEx  | Bable-CLI
-| JavaScript | | Validator |  babel-plugin-transform-class-properties
-| HTML5 |  |  | style-loader
-|  |  | | sass-loader
-|  |  |  | css-loader
-
+| React v16| SCSS | Yarn | WebPack 3.1
+| Expressjs | CSS3 |normalize.css npm | babel-core
+| NodeJS | react-modal | node-sass | babel-loader
+| JSX | Google Fonts | RegEx  | webpack extract text
+| JavaScript | sass-loader | Validator | babel-plugin-transform-class-properties
+| HTML5 | css-loader |  | bable-CLI
+| react-dom | style-loader |  | live-server |  |
 
 ### Steps to Deploy Locally
 
