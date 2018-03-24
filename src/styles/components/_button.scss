@@ -23,27 +23,30 @@
     border-bottom: .3rem solid darken($brand-4, 10%);
     color: $text-1;
     font-weight: 500;
+    outline: none;
     padding: $s-size;
 }
 
 .info-btn {
-     background: $brand-4;
-     border: none;
-     border-bottom: .3rem solid darken($brand-4, 10%);
-     border-radius: 15px;
-     color: $text-1;
-     font-family: $font-3;
-     font-size: $m-size;
-     font-style: italic;
-     font-weight: 300;
-     margin-bottom: $s-size;
-     padding: $xs-size;
+    background: $brand-4;
+    border: none;
+    border-bottom: .3rem solid darken($brand-4, 10%);
+    border-radius: 15px;
+    color: $text-1;
+    font-family: $font-3;
+    font-size: $m-size;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: $s-size;
+    outline: none;
+    padding: $xs-size;
 }
 
 .button--link {
     background: none;
     border: none;
     color: $brand-2;
+    outline: none;
     padding: 0;
 }
 
