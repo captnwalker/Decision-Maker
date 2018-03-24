@@ -15,11 +15,11 @@
             - [License MIT | *March 2018*](#license-mit-march-2018)
 
 ### Pupose of this app
->Can't Decide? Let "Decision Maker" Do It For You! Written in REACT and presented with Bold and Vibrant SCSS Styling, enter as many choices (options) as your paticular dilemma presents and Dilemma Decider will make that tough decision for you. Mediaqueries make this app as accessible and enjoyable on your mobile device as it is on your desktop. Enjoy! 
+>Can't Decide? Let "Decision Maker" Do It For You! Written in REACT and presented with Bold and Vibrant SCSS Styling, enter as many choices (options) as your paticular dilemma presents and Dilemma Decider will make that tough decision for you. Media queries make this app as accessible and enjoyable on your mobile device as it is on your desktop. Enjoy!
 
 ### How to Use
 
->Enter as many choices (options) as your paticular dilemma presents and **Dilemma Decider** will make that tough decision for you.
+> Click anywhere on the "Splash-Modal" to dismiss. Enter as many choices (options) as your paticular dilemma presents and **Dilemma Decider** will make that tough decision for you.
 
 ### Deployment
 

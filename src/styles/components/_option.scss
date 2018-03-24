@@ -16,10 +16,10 @@
 
 @media (max-width: $desktop-breakpoint) {
     .option {
-        //flex-direction: row;
-        //margin: 0 $s-size 0 0;
+        flex-direction: row;
+        margin: 0 $s-size 0 0;
         padding: $s-size $s-size;
-        //font-size: $s-size;
+        font-size: $s-size;
     }
     .option__text {
         font-size: $m-size;
