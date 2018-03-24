@@ -25,6 +25,8 @@
     outline: none;
     padding: $l-size;
     text-align: center;
+    border-bottom: .6rem solid darken($brand-6, 10%);
+    border-right: .6rem solid darken($brand-6, 10%);
 }
 
 .modal__title {
@@ -48,11 +50,15 @@
       outline: none;
       padding: $l-size;
       text-align: center;
+         border-bottom: .6rem solid darken($brand-2, 10%);
+         border-right: .6rem solid darken($brand-2, 10%);
 }
 
 .info-modal__title {
     color: $text-2;
+    font-weight: 800;
     margin: 0 0 $m-size 0;
+    text-shadow: .8px .8px navajowhite;
 }
 
 .p-info {
@@ -60,4 +66,5 @@
     font-family: $font-4;
     font-size: $m-size;
     font-weight: 400;
+    text-shadow: 1px 1px black;
 }
