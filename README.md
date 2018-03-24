@@ -6,12 +6,16 @@
 - [Dilemma Decider](#dilemma-decider)
     - [An Entertaining Decision Making App Built in REACT](#an-entertaining-decision-making-app-built-in-react)
         - [Table of Contents](#table-of-contents)
+        - [Pupose of this app](#pupose-of-this-app)
         - [How to Use](#how-to-use)
         - [Deployment](#deployment)
         - [Screenshot of this project](#screenshot-of-this-project)
         - [Tech Stack](#tech-stack)
         - [Steps to Deploy Locally](#steps-to-deploy-locally)
-            - [License - *MIT*](#license---mit)
+            - [License MIT | *March 2018*](#license-mit-march-2018)
+
+### Pupose of this app
+>Can't Decide? Let "Decision Maker" Do It For You! Written in REACT and presented with Bold and Vibrant SCSS Styling, enter as many choices (options) as your paticular dilemma presents and Dilemma Decider will make that tough decision for you. Mediaqueries make this app as accessible and enjoyable on your mobile device as it is on your desktop. Enjoy! 
 
 ### How to Use
 
@@ -47,4 +51,4 @@
 4. Start local server by running `yarn run dev-server`
 5. You are now in development mode on localhost:8080
 
-#### License - *MIT*
+#### License MIT | *March 2018*
