@@ -26,6 +26,7 @@
 
 .add-option__input::placeholder {
     font-style: italic;
+    color: $text-1;
 }
 
 @media (min-width: $desktop-breakpoint) {
